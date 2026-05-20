@@ -1,0 +1,39 @@
+{
+  "name": "A To Z Computer Solution",
+  "shortName": "A To Z",
+  "owner": "Durga Kumar Jha",
+  "tagline": "Repair, install, and keep every system running smoothly.",
+  "description": "Computer repair, installation assistance, networking, printer setup, upgrades, and troubleshooting support from Vashi, Navi Mumbai.",
+  "primaryPhoneDisplay": "+91 9892030197",
+  "secondaryPhoneDisplay": "+91 9004334923",
+  "whatsappPhoneDisplay": "+91 9892030197",
+  "email": "atozcs135@gamil.com",
+  "addressLine1": "Shop No. C-136, Ground Floor, Vashi Plaza, Plot No. 80-81, Sector-17",
+  "addressLine2": "Near HDFC Bank, Vashi, Navi Mumbai - 400703",
+  "streetAddress": "Shop No. C-136, Ground Floor, Vashi Plaza, Plot No. 80-81, Sector-17",
+  "locality": "Vashi",
+  "city": "Navi Mumbai",
+  "region": "Maharashtra",
+  "postalCode": "400703",
+  "countryCode": "IN",
+  "googleMapsUrl": "",
+  "areaServed": [
+    "Vashi",
+    "Navi Mumbai",
+    "Nearby homes and offices"
+  ],
+  "brands": [
+    "HP",
+    "Dell",
+    "AMD",
+    "ASUS",
+    "Acer",
+    "Sony",
+    "BenQ",
+    "Compaq",
+    "Intel",
+    "Fujitsu",
+    "Epson",
+    "Toshiba"
+  ]
+}
