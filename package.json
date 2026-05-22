@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/prepare-standalone.mjs",
     "start": "HOSTNAME=0.0.0.0 node .next/standalone/server.js",
     "start:next": "next start",
     "lint": "eslint"
