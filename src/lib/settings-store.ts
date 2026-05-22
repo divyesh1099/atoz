@@ -79,7 +79,7 @@ function sanitizeBusinessSettings(input: Partial<BusinessInfo>): BusinessInfo {
   };
 }
 
-async function ensureSettingsFile() {
+async function ensureSettingsFileForWrite() {
   await fs.mkdir(settingsDirectoryPath, { recursive: true });
 
   try {
@@ -94,8 +94,6 @@ async function ensureSettingsFile() {
 }
 
 export async function getBusinessSettings() {
-  await ensureSettingsFile();
-
   try {
     const raw = await fs.readFile(settingsFilePath, "utf8");
     const parsed = JSON.parse(raw) as Partial<BusinessInfo>;
@@ -108,7 +106,7 @@ export async function getBusinessSettings() {
 export async function saveBusinessSettings(input: Partial<BusinessInfo>) {
   const settings = sanitizeBusinessSettings(input);
 
-  await ensureSettingsFile();
+  await ensureSettingsFileForWrite();
   await fs.writeFile(
     settingsFilePath,
     `${JSON.stringify(settings, null, 2)}\n`,
